@@ -1,0 +1,27 @@
+
+.box {
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    /* background-color: aqua; */
+    margin: 15px 15px 0 0;
+}
+
+.line1 {
+
+    display: table;
+    
+}
+.line2 {
+    display: table;
+}
+.line3 {
+    display: table;
+}
+img {
+    width: 150px;
+    height: 150px;
+    opacity: 0.8;
+}

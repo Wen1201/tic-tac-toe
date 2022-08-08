@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="top container">
+  <h1>Welcome to the Tic-Tac-Toe</h1>
+  <h3>Play Tic-Tac-Toe against another player.</h3>
+  
+</div>
+
+ <label for="">
+    Player1:
+    <select name="hero" id="">
+        <option value="" selected disabled>Please select</option>
+        <option value="1">Iron Man</option>
+        <option value="2">Spider Man</option>
+        <option value="3">Captain America</option>
+    </select>
+</label>
+
+<label for="">
+    Player2:
+    <select name="badman" id="">
+        <option value="" selected disabled>Please select</option>
+        <option value="1">Loki</option>
+        <option value="2">Ultron</option>
+        <option value="3">Thanos</option>
+    </select>
+</label>
+ <div id="game">
+    <div class="line1">
+      <div class="box line1-position1">
+        <img id="img1" src="images/MarvelStudio.jpeg" alt="marvelStudio">
+      </div>
+      <div class="box line1-position2">
+        <img id="img2" src="images/MarvelStudio.jpeg" alt="marvelStudio">
+      </div>
+      <div class="box line1-position3">
+        <img id="img3" src="images/MarvelStudio.jpeg" alt="marvelStudio">
+      </div>
+    </div>
+    <div class="line2">
+      <div class="box line2-position1">
+        <img id="img4" src="images/MarvelStudio.jpeg" alt="marvelStudio">
+      </div>
+      <div class="box line2-position2">
+        <img id="img5" src="images/MarvelStudio.jpeg" alt="marvelStudio">
+      </div>
+      <div class="box line2-position3">
+        <img id="img6" src="images/MarvelStudio.jpeg" alt="marvelStudio">
+      </div>
+    </div>
+    <div class="line3">
+      <div class="box line3-position1">
+        <img id="img7" src="images/MarvelStudio.jpeg" alt="marvelStudio">
+      </div>
+      <div class="box line3-position2">
+        <img id="img8" src="images/MarvelStudio.jpeg" alt="marvelStudio">
+      </div>
+      <div class="box line3-position3">
+        <img id="img9" src="images/MarvelStudio.jpeg" alt="marvelStudio">
+      </div>
+    </div>
+</div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
