@@ -7,6 +7,7 @@
     border: 1px solid gray;
     /* background-color: aqua; */
     margin: 15px 15px 0 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 .line1 {
@@ -99,4 +100,53 @@ h3 {
   h2 {
     display:inline-block;
   }
+  select,button {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    font-size: 0.9rem;
+    padding: 0.4em 1.8em 0.4em 0.5em;
+    background: #326186;
+    color: rgb(220, 214, 214);
+    border: 0;
+  }
+  label {
+    
+    position: relative;
+  }
+
+  .custom-arrow{
+    position: absolute;
+    top:-0.4em;
+    right:0.25em;
+    
+    display: block;
+    background: #334a5e;
+    height: 170%;
+    width: 2rem;
+    pointer-events: none;
+  }
+
+  .custom-arrow::before,
+  .custom-arrow::after {
+    --size: 0.4em;
+    content: '';
+    position: absolute;
+    width:0;
+    height:0;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+  }
+
+  .custom-arrow::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid rgba(225,225,225,0.5);
+    top: 32%;
+  }
   
+  .custom-arrow::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid rgba(225,225,225,0.5);
+    top: 63%;
+  }
