@@ -13,16 +13,17 @@
 <div class="top-container">
   <h1>Welcome to the Tic-Tac-Toe</h1>
   <h3>Play Tic-Tac-Toe against another player.</h3>
-  <img class="logo" src="images/MarvelStudiosLogo.jpeg" alt="logo">
+  <h2 class="turn">Iron Man's Turn</h2>
+  <!-- <img class="logo" src="images/MarvelStudiosLogo.jpeg" alt="logo"> -->
 </div>
 
  <label for="">
     Player1:
     <select name="hero" id="">
         <option value="" selected disabled>Please select</option>
-        <option value="1">Iron Man</option>
-        <option value="2">Spider Man</option>
-        <option value="3">Captain America</option>
+        <option id="ironman" value="1">Iron Man</option>
+        <option id="spiderman" value="2">Spider Man</option>
+        <option id="captain" value="3">Captain America</option>
     </select>
 </label>
 
@@ -30,12 +31,16 @@
     Player2:
     <select name="badman" id="">
         <option value="" selected disabled>Please select</option>
-        <option value="1">Loki</option>
-        <option value="2">Ultron</option>
-        <option value="3">Thanos</option>
+        <!-- <option value="1">Loki</option>
+        <option value="2">Ultron</option> -->
+        <option id="thanos" value="3">Thanos</option>
     </select>
+    
 </label>
- <div id="game">
+
+
+
+  <div id="game">
     <div class="line1">
       <div class="box line1-position1">
         <img id="img1" src="images/MarvelStudio.jpeg" alt="marvelStudio">
@@ -69,10 +74,32 @@
         <img id="img9" src="images/MarvelStudio.jpeg" alt="marvelStudio">
       </div>
     </div>
+  </div>
+  
+
+  <button id="myBtn">Play Again</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class="buttonimg" src="images/avengers4.jpeg" alt="logo">
+    <p>Avengers build a time machine, they retrieve the Time Stone, Reality Stone, Power Stone, Space Stones and  Soul Stone from the past, you have more chance to reverse the actions of Thanos in the present, do you want to save the world? </p>
+  </div>
+ 
+
+  
+
 </div>
+
 
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/ironman.js"></script>
+    <script src="js/spiderman.js"></script>
+    <script src="js/captain.js"></script>
 </body>
 </html>
