@@ -164,10 +164,42 @@ h3 {
   
   }
 
-  #hidding {
+  #C-hidding {
     position:fixed;
-    top: 400px;
-    left:400px;
-    width:500px;
-    height: 500px;
+    top: 23vh;
+    left:22vw;
+    width:762px;
+    height: 530px;
+    opacity: 1;
+    visibility:hidden;
+  }
+
+  #I-hidding {
+    position:fixed;
+    top: 23vh;
+    left:22vw;
+    width:762px;
+    height: 530px;
+    opacity: 1;
+    visibility:hidden;
+  }
+
+  #TC-hidding {
+    position:fixed;
+    top: 23vh;
+    left:25vw;
+    width:762px;
+    height: 530px;
+    opacity: 1;
+    visibility:hidden;
+  }
+
+  #TI-hidding {
+    position:fixed;
+    top: 23vh;
+    left:25vw;
+    width:762px;
+    height: 530px;
+    opacity: 1;
+    visibility:hidden;
   }
