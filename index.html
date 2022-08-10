@@ -9,40 +9,44 @@
    <link rel="stylesheet" href="css/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Montserrat:ital,wght@1,300&family=Open+Sans:wght@300&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
+    <video autoplay="autoplay" loop="loop" muted="muted" src="https://assets.procreate.art/savage/background.mp4"></video>
 <div class="top-container">
-  <h1>Welcome to the Tic-Tac-Toe</h1>
-  <h3>Play Tic-Tac-Toe against another player.</h3>
-  <h2 class="turn">Choose a hero</h2>
+  <h1>Assemble to the Mic-Mac-Moe</h1>
+  <!-- <img id="spider-man-heading" src="images/spider-man-heading.jpg" alt="spidermanheading"> -->
+  <!-- <h3>Play Tic-Tac-Toe against another player.</h3> -->
+  <h2 class="turn">Choose An Avenger</h2>
   <!-- <img class="logo" src="images/MarvelStudiosLogo.jpeg" alt="logo"> -->
 </div>
+
 <div>
  
 
 
 
   <div id="game">
-    <label for="">
-        Player1:
-        <select name="hero" id="">
+    <label id="buttton-hero" for="">
+        Avenger:
+        <select id="hero" name="hero" >
             <option value="" selected disabled>Please select</option>
             <option id="ironman" value="1">Iron Man</option>
             <option id="spiderman" value="2">Spider Man</option>
-            <option id="captain" value="3">Captain America</option>
+            <option id="captain" value="3">Cap America</option>
         </select>
         <span class="custom-arrow"></span>
     </label>
     
-    <label for="">
-        Player2:
-        <select name="badman" id="">
+    <label id="button-thanos" for="">
+        Mad Titan:
+        <select id="thanos" name="badman" >
             <!-- <option value="" selected disabled>Please select</option> -->
             <!-- <option value="1">Loki</option>
             <option value="2">Ultron</option> -->
-            <option id="thanos" value="3">Thanos</option>
+            <option value="3">Thanos</option>
         </select>
         <span class="custom-arrow"></span>
         
@@ -103,7 +107,7 @@
     <!-- <p>Snap the finger, have another chance </p> -->
   </div>
  </div>
- <video autoplay="autoplay" loop="loop" muted="muted" src="https://assets.procreate.art/savage/background.mp4"></video>
+
 
 
 
