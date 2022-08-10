@@ -7,79 +7,86 @@
   <title>Tic-Tac-Toe</title>
   
    <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
 <div class="top-container">
   <h1>Welcome to the Tic-Tac-Toe</h1>
   <h3>Play Tic-Tac-Toe against another player.</h3>
-  <h2 class="turn">Iron Man's Turn</h2>
+  <h2 class="turn">Choose a hero</h2>
   <!-- <img class="logo" src="images/MarvelStudiosLogo.jpeg" alt="logo"> -->
 </div>
-
- <label for="">
-    Player1:
-    <select name="hero" id="">
-        <!-- <option value="" selected disabled>Please select</option> -->
-        <option id="ironman" value="1">Iron Man</option>
-        <option id="spiderman" value="2">Spider Man</option>
-        <option id="captain" value="3">Captain America</option>
-    </select>
-    <span class="custom-arrow"></span>
-</label>
-
-<label for="">
-    Player2:
-    <select name="badman" id="">
-        <!-- <option value="" selected disabled>Please select</option> -->
-        <!-- <option value="1">Loki</option>
-        <option value="2">Ultron</option> -->
-        <option id="thanos" value="3">Thanos</option>
-    </select>
-    <span class="custom-arrow"></span>
-    
-</label>
+<div>
+ 
 
 
 
   <div id="game">
+    <label for="">
+        Player1:
+        <select name="hero" id="">
+            <option value="" selected disabled>Please select</option>
+            <option id="ironman" value="1">Iron Man</option>
+            <option id="spiderman" value="2">Spider Man</option>
+            <option id="captain" value="3">Captain America</option>
+        </select>
+        <span class="custom-arrow"></span>
+    </label>
+    
+    <label for="">
+        Player2:
+        <select name="badman" id="">
+            <!-- <option value="" selected disabled>Please select</option> -->
+            <!-- <option value="1">Loki</option>
+            <option value="2">Ultron</option> -->
+            <option id="thanos" value="3">Thanos</option>
+        </select>
+        <span class="custom-arrow"></span>
+        
+    </label>
+    <button id="myBtn">Play Again</button>
     <div class="line1">
       <div class="box line1-position1">
-        <img id="img1" src="images/11.JPG" alt="marvelStudio">
+        <img id="img1" src="images/1.JPG" alt="marvelStudio">
       </div>
       <div class="box line1-position2">
-        <img id="img2" src="images/22.JPG" alt="marvelStudio">
+        <img id="img2" src="images/2.JPG" alt="marvelStudio">
       </div>
       <div class="box line1-position3">
-        <img id="img3" src="images/33.JPG" alt="marvelStudio">
+        <img id="img3" src="images/3.JPG" alt="marvelStudio">
       </div>
     </div>
     <div class="line2">
       <div class="box line2-position1">
-        <img id="img4" src="images/44.JPG" alt="marvelStudio">
+        <img id="img4" src="images/4.JPG" alt="marvelStudio">
       </div>
       <div class="box line2-position2">
-        <img id="img5" src="images/55.JPG" alt="marvelStudio">
+        <img id="img5" src="images/5.JPG" alt="marvelStudio">
       </div>
       <div class="box line2-position3">
-        <img id="img6" src="images/66.JPG" alt="marvelStudio">
+        <img id="img6" src="images/6.JPG" alt="marvelStudio">
       </div>
     </div>
     <div class="line3">
       <div class="box line3-position1">
-        <img id="img7" src="images/77.JPG" alt="marvelStudio">
+        <img id="img7" src="images/7.JPG" alt="marvelStudio">
       </div>
       <div class="box line3-position2">
-        <img id="img8" src="images/88.JPG" alt="marvelStudio">
+        <img id="img8" src="images/8.JPG" alt="marvelStudio">
       </div>
       <div class="box line3-position3">
-        <img id="img9" src="images/99.JPG" alt="marvelStudio">
+        <img id="img9" src="images/9.JPG" alt="marvelStudio">
       </div>
     </div>
   </div>
+</div>
+<img id="hidding" src="images/avengers3.jpeg" alt="avengers">
   
 
-  <button id="myBtn">Play Again</button>
+  
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -87,14 +94,10 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <img class="buttonimg" src="images/avengers4.jpeg" alt="logo">
-    <p>Avengers build a time machine, they retrieve the Time Stone, Reality Stone, Power Stone, Space Stones and  Soul Stone from the past, you have more chance to reverse the actions of Thanos in the present, do you want to save the world? </p>
+    <img class="buttonimg" src="images/hulk1.jpg" alt="logo">
+    <!-- <p>Snap the finger, have another chance </p> -->
   </div>
- 
-
-  
-
-</div>
+ </div>
 
 
 

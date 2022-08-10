@@ -2,8 +2,8 @@
 .box {
     float: left;
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border: 1px solid gray;
     /* background-color: aqua; */
     margin: 15px 15px 0 0;
@@ -22,8 +22,8 @@
     display: table;
 }
 img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     opacity: 0.8;
 }
 /* .logo { */
@@ -33,18 +33,24 @@ img {
      opacity: 0.5;
 } */
 #game {
-    background-size: cover;
-    position: absolute;
+    /* background-size: cover;
+    position: absolute; */
+    /* border: 2px solid blue; */
+    /* display:inline-block; */
+    width: fit-content;
+    margin: 20px auto;
+    
 }
 
+
 body {
-    padding:0 0 0 35%;
+    /* padding:; */
     margin: 20px auto;
 }
 h1 {
-    color:rgb(131, 14, 14);
+    color:#d8d8db;
     margin: 0 auto;
-    padding: 0 0 0 25px;
+    padding: 20px 0 0 40px;
 }
 h3 {
     padding: 0 0 0 50px;
@@ -56,7 +62,7 @@ h3 {
     margin-left: 10px;
 }
 .modal {
-    background-size: cover;
+    background-size:cover;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -104,23 +110,23 @@ h3 {
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     font-size: 0.9rem;
     padding: 0.4em 1.8em 0.4em 0.5em;
-    background: #326186;
-    color: rgb(220, 214, 214);
+    background: #c24b50;
+    color: #cbccd0;
     border: 0;
   }
   label {
-    
+    font-family: 'Russo One', sans-serif;
     position: relative;
   }
 
   .custom-arrow{
     position: absolute;
-    top:-0.4em;
+    top:-0.3em;
     right:0.25em;
     
     display: block;
-    background: #334a5e;
-    height: 170%;
+    background: #6b3e3e;
+    height: 150%;
     width: 2rem;
     pointer-events: none;
   }
@@ -149,4 +155,19 @@ h3 {
     border-right: var(--size) solid transparent;
     border-top: var(--size) solid rgba(225,225,225,0.5);
     top: 63%;
+  }
+
+  .top-container {
+    
+    text-align: center;
+    background-color:#9a3e42;
+  
+  }
+
+  #hidding {
+    position:fixed;
+    top: 400px;
+    left:400px;
+    width:500px;
+    height: 500px;
   }

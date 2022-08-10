@@ -1,5 +1,7 @@
 $("#ironman").on("click", playgame);
 function playgame(){
+    $('h2').text("Iron Man's Turn");
+
 // $(".box").on("click", again);
 var modal = document.getElementById("myModal");
 
@@ -42,14 +44,14 @@ var count = 1;
 $('body').on('click', '.box', function () {
    if (count < 9) {
     count++;
-   } else if(count == 9){
-    //  $("#game").css({"background-image":"src('images/MarvelStudiosLogo.jpeg')", "background-size": "cover"});
-    // function again( ){
-    //     $(this).children('#background-logo').toggle();
-        
-    // } 
-    console.log('Again')
-     };
+   } else if(count = 9){
+    if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] || allboxes[1] == allboxes[4] && allboxes[1]== allboxes[7]|| allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6]|| allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
+       console.log('You WIn')  
+    } else {
+       console.log('Again')
+    }
+  
+    };
     
 });
 var allboxes = ['box1', 'box2', 'box3', 'box4', 'box5', 'box6', 'box7', 'box8', 'box9'];
@@ -59,11 +61,13 @@ console.log( $box1 );
 function printMousePos1( ) {   
         if (count % 2 != 0){
               $('#img1').attr('src', 'images/ironman.png');
-            //   allboxes[0] = 1;
+              $('h2').text("Thanos's Turn");
+
             }else{
             $('#img1').attr('src', 'images/thanos.jpeg'); 
-            // allboxes[0] = 2;
-           };
+            $('h2').text("Iron Man's Turn");
+
+        };
            
            allboxes[0] = $('#img1').attr('src');    
            if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] ) {
@@ -82,11 +86,11 @@ console.log( $box2 );
 function printMousePos2( ) { 
         if (count % 2 != 0){
               $('#img2').attr('src', 'images/ironman.png');
-            //   allboxes[1] = 1;
-        }else{
+              $('h2').text("Thanos's Turn");
+            }else{
             $('#img2').attr('src', 'images/thanos.jpeg');
-            // allboxes[1] = 2;
-           }; 
+            $('h2').text("Iron Man's Turn");
+        }; 
             allboxes[1] =$('#img2').attr('src');
          
            if (allboxes[0] == allboxes[1]&& allboxes[0] == allboxes[2] ||  allboxes[1] == allboxes[4] && allboxes[1]== allboxes[7]) {
@@ -104,11 +108,11 @@ function printMousePos3( ) {
 // });
      if (count % 2 != 0){
         $('#img3').attr('src', 'images/ironman.png');
-        // allboxes[2] = 1;
-      }else{
+        $('h2').text("Thanos's Turn");
+    }else{
          $('#img3').attr('src', 'images/thanos.jpeg'); 
-        //  allboxes[2] = 2;
-      };
+         $('h2').text("Iron Man's Turn");
+        };
        allboxes[2] =$('#img3').attr('src');
       
       if (allboxes[0] == allboxes[1] && allboxes[0] == allboxes[2] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] ) {
@@ -126,11 +130,11 @@ function printMousePos4( ) {
 // }); 
 if (count % 2 != 0){
     $('#img4').attr('src', 'images/ironman.png');
-    // allboxes[3] = 1;
-  }else if(count % 2 == 0){
+    $('h2').text("Thanos's Turn");
+}else if(count % 2 == 0){
      $('#img4').attr('src', 'images/thanos.jpeg'); 
-    //  allboxes[3] = 2;
-  };
+     $('h2').text("Iron Man's Turn");
+    };
    allboxes[3] =$('#img4').attr('src');
 
   if ( allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
@@ -148,11 +152,11 @@ function printMousePos5( ) {
 // });
 if (count % 2 != 0){
     $('#img5').attr('src', 'images/ironman.png');
-    // allboxes[4] = 1;
-  }else{
+    $('h2').text("Thanos's Turn");
+}else{
      $('#img5').attr('src', 'images/thanos.jpeg');
-    //  allboxes[4] = 2;
-  };
+     $('h2').text("Iron Man's Turn");
+    };
    allboxes[4] =$('#img5').attr('src');
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[2] == allboxes[4] && allboxes[2] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
@@ -170,15 +174,16 @@ function printMousePos6( ) {
 // });
 if (count % 2 != 0){
     $('#img6').attr('src', 'images/ironman.png');
-    // allboxes[5] = 1;
-  }else{
+    $('h2').text("Thanos's Turn");
+}else{
      $('#img6').attr('src', 'images/thanos.jpeg');
-    //  allboxes[5] = 2;
-  };
+     $('h2').text("Iron Man's Turn");
+    };
   allboxes[5] =$('#img6').attr('src');
  
   if ( allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     console.log('You WIn')
+    // use .show() 
  } else {
     
  };
@@ -192,11 +197,11 @@ function printMousePos7( ) {
 // });
      if (count % 2 != 0){
        $('#img7').attr('src', 'images/ironman.png');
-    //    allboxes[6] = 1;
-      }else{
+       $('h2').text("Thanos's Turn");
+    }else{
         $('#img7').attr('src', 'images/thanos.jpeg');
-        // allboxes[6] = 2;
-      };
+        $('h2').text("Iron Man's Turn");
+    };
        allboxes[6] =$('#img7').attr('src');
       
   if (allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
@@ -214,11 +219,11 @@ function printMousePos8( ) {
 // });
    if (count % 2 != 0){
       $('#img8').attr('src', 'images/ironman.png');
-    //   allboxes[7] = 1;
+      $('h2').text("Thanos's Turn");
     }else{
        $('#img8').attr('src', 'images/thanos.jpeg');
-    //    allboxes[7] = 2;
-     };
+       $('h2').text("Iron Man's Turn");
+    };
       allboxes[7] =$('#img8').attr('src');
        
      if ( allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8] ) {
@@ -237,11 +242,11 @@ function printMousePos9( ) {
 // });
 if (count % 2 != 0){
     $('#img9').attr('src', 'images/ironman.png');
-    //  allboxes[8] = 1;
-  }else{
+    $('h2').text("Thanos's Turn");
+}else{
      $('#img9').attr('src', 'images/thanos.jpeg');
-    //  allboxes[8] = 2;
-  };
+     $('h2').text("Iron Man's Turn");
+    };
    allboxes[8] = $('#img9').attr('src');
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
@@ -251,3 +256,10 @@ if (count % 2 != 0){
 };
 }
 }
+
+
+// $('h1').css('visibility', 'hidden')
+
+// $('h1').hide() // other version .show()
+// display: flex or position: absolute or position: fixed, top: left: OR z-index 
+
