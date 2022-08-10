@@ -113,6 +113,7 @@ h3 {
   }
   h2 {
     display:inline-block;
+    color:#d8d8db;
     
   }
   label {
@@ -193,17 +194,17 @@ h3 {
     position:fixed;
     top: 22vh;
     left:22vw;
-    width:762px;
+    width:800px;
     height: 530px;
     opacity: 1;
     visibility:hidden;
   }
 
   #I-hidding {
-    position:fixed;
+    position:absolute;
     top: 23vh;
     left:22vw;
-    width:762px;
+    width:800px;
     height: 530px;
     opacity: 1;
     visibility:hidden;
@@ -228,9 +229,7 @@ h3 {
     opacity: 1;
     visibility:hidden;
   }
-  /* #spider-man-heading {
-    opacity: 0.3;
-  } */
+ 
   video {
     position:absolute;
     z-index:-10;
@@ -241,3 +240,11 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     color:#a6a0b2;
   }
+   /* #spiderman-heading {
+    position:fixed;
+    top:50vh;
+    left:23vw;
+    width:400px;
+    height:410px;
+    opacity: 0.7;
+  } */
