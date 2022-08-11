@@ -12,24 +12,24 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+// btn.onclick = function() {
+//   modal.style.display = "block";
   
-}
+// }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-  window.location.reload();
-}
+// span.onclick = function() {
+//   modal.style.display = "none";
+//   window.location.reload();
+// }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    window.location.reload();
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//     window.location.reload();
+//   }
+// }
 $(".line1-position1").on("click", printMousePos1);
 $(".line1-position2").on("click", printMousePos2);
 $(".line1-position3").on("click", printMousePos3);
@@ -65,7 +65,7 @@ function printMousePos1( ) {
                allboxes[0] = $('#img1').attr('src');    
            if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] ) {
            $('#I-hidding').css('visibility', 'visible');
-            
+           $('h2').text("Iron Man Win");
             console.log('You WIn')
              } else {
             
@@ -77,7 +77,8 @@ function printMousePos1( ) {
              allboxes[0] = $('#img1').attr('src');    
            if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] ) {
            $('#TI-hidding').css('visibility', 'visible');
-            
+           $('h2').text("Thanos Win");
+
             console.log('You WIn')
         } else {
             
@@ -103,6 +104,8 @@ function printMousePos2( ) {
          
            if (allboxes[0] == allboxes[1]&& allboxes[0] == allboxes[2] ||  allboxes[1] == allboxes[4] && allboxes[1]== allboxes[7]) {
            $('#I-hidding').css('visibility', 'visible');
+           $('h2').text("Iron Man Win");
+
             console.log('You WIn')
          } else {
             
@@ -114,6 +117,8 @@ function printMousePos2( ) {
          
            if (allboxes[0] == allboxes[1]&& allboxes[0] == allboxes[2] ||  allboxes[1] == allboxes[4] && allboxes[1]== allboxes[7]) {
            $('#TI-hidding').css('visibility', 'visible');
+           $('h2').text("Thanos Win");
+
             console.log('You WIn')
          } else {
             
@@ -135,6 +140,7 @@ function printMousePos3( ) {
       
       if (allboxes[0] == allboxes[1] && allboxes[0] == allboxes[2] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] ) {
          $('#I-hidding').css('visibility', 'visible');
+         $('h2').text("Iron Man Win");
 
         console.log('You WIn')
      } else {
@@ -147,7 +153,8 @@ function printMousePos3( ) {
       
          if (allboxes[0] == allboxes[1] && allboxes[0] == allboxes[2] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] ) {
             $('#TI-hidding').css('visibility', 'visible');
-   
+            $('h2').text("Thanos Win");
+
            console.log('You WIn')
         } else {
            
@@ -169,6 +176,7 @@ if (count % 2 != 0){
 
   if ( allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#I-hidding').css('visibility', 'visible');
+    $('h2').text("Iron Man Win");
 
     console.log('You WIn')
  } else {
@@ -181,6 +189,7 @@ if (count % 2 != 0){
 
   if ( allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#TI-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Win");
 
     console.log('You WIn')
  } else {
@@ -206,6 +215,7 @@ if (count % 2 != 0){
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[2] == allboxes[4] && allboxes[2] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#I-hidding').css('visibility', 'visible');
+    $('h2').text("Iron Man Win");
 
     console.log('You WIn')
  } else {
@@ -218,6 +228,7 @@ if (count % 2 != 0){
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[2] == allboxes[4] && allboxes[2] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#TI-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Win");
 
     console.log('You WIn')
  } else {
@@ -240,6 +251,7 @@ if (count % 2 != 0){
  
   if ( allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#I-hidding').css('visibility', 'visible');
+    $('h2').text("Iron Man Win");
 
     console.log('You WIn')
     // use .show() 
@@ -253,6 +265,7 @@ if (count % 2 != 0){
  
   if ( allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#TI-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Win");
 
     console.log('You WIn')
     // use .show() 
@@ -276,6 +289,7 @@ function printMousePos7( ) {
       
   if (allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
     $('#I-hidding').css('visibility', 'visible');
+    $('h2').text("Iron Man Win");
 
     console.log('You WIn')
  } else {
@@ -288,6 +302,7 @@ function printMousePos7( ) {
       
   if (allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
     $('#TI-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Win");
 
     console.log('You WIn')
  } else {
@@ -309,7 +324,8 @@ function printMousePos8( ) {
       allboxes[7] =$('#img8').attr('src');
        
      if ( allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8] ) {
-    $('#TI-hidding').css('visibility', 'visible');
+    $('#I-hidding').css('visibility', 'visible');
+    $('h2').text("Iron Man Win");
 
         console.log('You WIn')
      } else {
@@ -322,6 +338,7 @@ function printMousePos8( ) {
        
      if ( allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8] ) {
     $('#TI-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Win");
 
         console.log('You WIn')
      } else {
@@ -344,7 +361,8 @@ if (count % 2 != 0){
     allboxes[8] = $('#img9').attr('src');
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
-    $('#TI-hidding').css('visibility', 'visible');
+    $('#I-hidding').css('visibility', 'visible');
+    $('h2').text("Iron Man Win");
 
     console.log('You WIn')
  } else {
@@ -357,6 +375,7 @@ if (count % 2 != 0){
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
     $('#TI-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Win");
 
     console.log('You WIn')
  } else {
