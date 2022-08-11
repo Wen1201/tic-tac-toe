@@ -2,34 +2,6 @@ $("#captain").on("click", playgame);
 function playgame(){
     $('h2').text("Captain's Turn");
 
-// $(".box").on("click", again);
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//   modal.style.display = "block";
-  
-// }
-
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-//   window.location.reload();
-// }
-
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//     window.location.reload();
-//   }
-// }
 $(".line1-position1").on("click", printMousePos1);
 $(".line1-position2").on("click", printMousePos2);
 $(".line1-position3").on("click", printMousePos3);
@@ -124,9 +96,7 @@ function printMousePos2( ) {
 const $box3 = $(".line1-position3")
 console.log( $box3 );
 function printMousePos3( ) {
-    
-//    $box3.css({backgroundColor: 'red',
-// });
+
      if (count % 2 != 0){
         $('#img3').attr('src', 'images/captain2.png');
         $('h2').text("Thanos's Turn");
@@ -159,8 +129,7 @@ const $box4 = $(".line2-position1")
 console.log( $box4 );
 
 function printMousePos4( ) {
-//    $box4.css({backgroundColor: 'red',
-// }); 
+
 if (count % 2 != 0){
     $('#img4').attr('src', 'images/captain2.png');
     $('h2').text("Thanos's Turn");
@@ -191,8 +160,7 @@ const $box5 = $(".line2-position2")
 console.log( $box5 );
 
 function printMousePos5( ) {
-//    $box5.css({backgroundColor: 'red',
-// });
+
 if (count % 2 != 0){
     $('#img5').attr('src', 'images/captain2.png');
     $('h2').text("Thanos's Turn");
@@ -225,8 +193,7 @@ const $box6 = $(".line2-position3")
 console.log( $box6 );
 
 function printMousePos6( ) {
-//    $box6.css({backgroundColor: 'red',
-// });
+
 if (count % 2 != 0){
     $('#img6').attr('src', 'images/captain2.png');
     $('h2').text("Thanos's Turn");
@@ -259,8 +226,7 @@ const $box7 = $(".line3-position1")
 console.log( $box7 );
 
 function printMousePos7( ) {
-//    $box7.css({backgroundColor: 'red',
-// });
+
      if (count % 2 != 0){
        $('#img7').attr('src', 'images/captain2.png');
        $('h2').text("Thanos's Turn");
@@ -293,8 +259,7 @@ const $box8 = $(".line3-position2")
 console.log( $box8 );
 
 function printMousePos8( ) {
-//    $box8.css({backgroundColor: 'red',
-// });
+
    if (count % 2 != 0){
       $('#img8').attr('src', 'images/captain2.png');
       $('h2').text("Thanos's Turn");
@@ -328,8 +293,7 @@ const $box9 = $(".line3-position3")
 console.log( $box9 );
 
 function printMousePos9( ) {
-//    $box9.css({backgroundColor: 'red',
-// });
+
 if (count % 2 != 0){
     $('#img9').attr('src', 'images/captain2.png');
     $('h2').text("Thanos's Turn");
