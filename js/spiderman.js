@@ -33,11 +33,12 @@ const $box1 = $(".line1-position1")
 console.log( $box1 );
 function printMousePos1( ) {   
         if (count % 2 != 0){
-              $('#img1').attr('src', 'images/spiderman.jpeg');
-              $('h2').text("Thanos's Turn");
-              allboxes[0] = $('#img1').attr('src');    
-              if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] ) {
-                $('#S-hidding').css('visibility', 'visible');
+            $('#img1').attr('src', 'images/spiderman.jpeg');
+            $('h2').text("Thanos's Turn");
+            allboxes[0] = $('#img1').attr('src');    
+            if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] ) {
+               $('#S-hidding').css('visibility', 'visible');
+               $('h2').text("Spider Man Wins");
 
                console.log('You WIn')
                
@@ -50,6 +51,7 @@ function printMousePos1( ) {
             allboxes[0] = $('#img1').attr('src');    
             if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] ) {
                 $('#TS-hidding').css('visibility', 'visible');
+                $('h2').text("Thanos Wins");
 
              console.log('You WIn')
              
@@ -73,6 +75,7 @@ function printMousePos2( ) {
          
            if (allboxes[0] == allboxes[1]&& allboxes[0] == allboxes[2] ||  allboxes[1] == allboxes[4] && allboxes[1]== allboxes[7]) {
             $('#S-hidding').css('visibility', 'visible');
+            $('h2').text("Spider Man Wins");
 
             console.log('You WIn')
          } else {
@@ -85,6 +88,7 @@ function printMousePos2( ) {
          
            if (allboxes[0] == allboxes[1]&& allboxes[0] == allboxes[2] ||  allboxes[1] == allboxes[4] && allboxes[1]== allboxes[7]) {
             $('#TS-hidding').css('visibility', 'visible');
+            $('h2').text("Thanos Wins");
 
             console.log('You WIn')
          } else {
@@ -104,6 +108,7 @@ function printMousePos3( ) {
       
       if (allboxes[0] == allboxes[1] && allboxes[0] == allboxes[2] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] ) {
         $('#S-hidding').css('visibility', 'visible');
+        $('h2').text("Spider Man Wins");
 
         console.log('You WIn')
      } else {
@@ -116,6 +121,7 @@ function printMousePos3( ) {
       
       if (allboxes[0] == allboxes[1] && allboxes[0] == allboxes[2] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] ) {
         $('#TS-hidding').css('visibility', 'visible');
+        $('h2').text("Thanos Wins");
 
         console.log('You WIn')
      } else {
@@ -137,6 +143,7 @@ if (count % 2 != 0){
 
   if ( allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#S-hidding').css('visibility', 'visible');
+    $('h2').text("Spider Man Wins");
 
     console.log('You WIn')
  } else {
@@ -149,6 +156,7 @@ if (count % 2 != 0){
 
   if ( allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#TS-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Wins");
 
     console.log('You WIn')
  }else {
@@ -172,6 +180,7 @@ if (count % 2 != 0){
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[2] == allboxes[4] && allboxes[2] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#S-hidding').css('visibility', 'visible');
+    $('h2').text("Spider Man Wins");
 
     console.log('You WIn')
  } else {
@@ -184,6 +193,7 @@ if (count % 2 != 0){
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[2] == allboxes[4] && allboxes[2] == allboxes[6] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#TS-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Wins");
 
     console.log('You WIn')
  } else {
@@ -205,6 +215,7 @@ if (count % 2 != 0){
  
   if ( allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#S-hidding').css('visibility', 'visible');
+    $('h2').text("Spider Man Wins");
 
     console.log('You WIn')
  } else {
@@ -217,6 +228,7 @@ if (count % 2 != 0){
  
   if ( allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] ) {
     $('#TS-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Wins");
 
     console.log('You WIn')
  } else {
@@ -238,6 +250,7 @@ function printMousePos7( ) {
       
   if (allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
     $('#S-hidding').css('visibility', 'visible');
+    $('h2').text("Spider Man Wins");
 
     console.log('You WIn')
  } else {
@@ -250,6 +263,7 @@ function printMousePos7( ) {
       
   if (allboxes[0] == allboxes[3] && allboxes[0] == allboxes[6] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
     $('#TS-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Wins");
 
     console.log('You WIn')
  } else {
@@ -271,6 +285,7 @@ function printMousePos8( ) {
        
      if ( allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8] ) {
         $('#S-hidding').css('visibility', 'visible');
+        $('h2').text("Spider Man Wins");
 
         console.log('You WIn')
      } else {
@@ -283,6 +298,7 @@ function printMousePos8( ) {
        
      if ( allboxes[1] == allboxes[4] && allboxes[1] == allboxes[7] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8] ) {
         $('#TS-hidding').css('visibility', 'visible');
+        $('h2').text("Thanos Wins");
 
         console.log('You WIn')
      } else {
@@ -305,6 +321,7 @@ if (count % 2 != 0){
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
     $('#S-hidding').css('visibility', 'visible');
+    $('h2').text("Spider Man Wins");
 
     console.log('You WIn')
  } else {
@@ -317,6 +334,7 @@ if (count % 2 != 0){
   
   if ( allboxes[0] == allboxes[4] && allboxes[0] == allboxes[8] || allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {
     $('#TS-hidding').css('visibility', 'visible');
+    $('h2').text("Thanos Wins");
 
     console.log('You WIn')
  } else {
