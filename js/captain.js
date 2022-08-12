@@ -21,6 +21,7 @@ $('body').on('click', '.box', function () {
         console.log('You WIn')  
         
      } else {
+        $('h2').text("Draw");
         console.log('Again')
      }
    

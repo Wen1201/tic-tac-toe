@@ -1,5 +1,5 @@
-
-var btn = document.getElementById("myBtn");
+//press play again button, refresh the web page
+var btn = document.getElementById("myBtn"); 
 btn.onclick = function() {
     
     window.location.reload();
@@ -8,7 +8,7 @@ btn.onclick = function() {
 
 const spiderman = document.getElementById('spiderman-heading');
 
-spiderman.style.top = '4px';
+spiderman.style.top = '94px';
 direction = 8;
 
 const sWalk = function(){

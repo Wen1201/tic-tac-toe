@@ -12,13 +12,21 @@ The rules to play this game is just the same as Tic- Tax -Toe. It's just you can
 
 List of any known bugs:
 
-1.The Avenger field wouldn't automatically refreshed to 'Please Select' after  hitting the 'Play Again' tab/ refresh the web page.
+1.The Avenger field wouldn't automatically refreshed to 'Please Select' after click the 'Play Again' tab/ refresh the web page.
 2.After clicked on one of the nine boxes, the image wouldn't be locked. If you click on it again, it will change to another image.
 
-Tech used:
+Tech used: 
+Javascript:
+   create array
+   numbers: parseInt();
+   Conditionals ( if / else ), conditional tests:
+        the comparison operators (<, >, <=, >= )
+        operators: ==, !== &&, ||
+        
 
 
 A wishlist of features:
 1: Sound effect and background music need to be added.
 2: Add a couple bad guys in the Thanos's drop down box.
-3.The subject looks a bit boring. I am not sure what to add at the moment.
+3: Add computer player
+4: The subject looks a bit boring. I am not sure what to add at the moment.
