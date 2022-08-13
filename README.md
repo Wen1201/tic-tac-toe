@@ -1,5 +1,5 @@
 # Assemble to the Mic-Mac-Moe!!!❤️❤️❤️
-
+![alt text](images/screenshot2.png)
 ## Author: 
 Wen Gong
 
@@ -12,8 +12,6 @@ The original task was to make a Tic-Tac-Toe. To bring the game to life, I combin
 In this game, I set up 2 players, one is an Avenger and the other is the Thanos. At the end of the game, you will see short video from The Avengers movie. As we are in the Marvel Universe, we always have an option to play again.
 I tried my best to make this web page as cool as possible and am still trying to make it better as I'm a big Marvel fun. You will see your fridenly neighbourhood Peter Paker in the page. 
 
-## Screenshot:
-![alt text](images/screenshot2.png)
 
 ## Main features and any instructions:
 The rules to play this game is just the same as Tic- Tax -Toe. It's just you can choose your preferred character at the drop down box. At the end of the game, you will see a short video and you can always choose to play it again.
