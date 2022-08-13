@@ -16,7 +16,7 @@ var count = 1;  //start from the first click
 $('body').on('click', '.box', function () {
    if (count < 9) {
     count++;
-   } else if(count = 9){ //when count equal to 9, check if the game is win or draw
+   } else if(count === 9){ //when count equal to 9, check if the game is win or draw
     // 8 ways to win
       if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] || allboxes[1] == allboxes[4] && allboxes[1]== allboxes[7]|| allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6]|| allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]) {  
        console.log('You WIn')  
@@ -39,17 +39,18 @@ function printMousePos1( ) {   //check if the count amount is odd or even
                //check if iron man wins 
               if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] ) {
                  $('#I-hidding').css('visibility', 'visible'); //gif shows up
-                 $('h2').text("Iron Man Wins");
+                 $('h2').text("Iron Man Wins"); // change h2 to "Iron Man Wins"
                  console.log('You WIn')
               } else {
               };
         }else{ //even number is the second player which is Thanos
             $('#img1').attr('src', 'images/thanos.jpeg'); // change img to Thanos
             $('h2').text("Iron Man's Turn");  //change h2 to "Iron Man's Turn"
-            allboxes[0] = $('#img1').attr('src');    //put iron man as first element in array
+            allboxes[0] = $('#img1').attr('src');    //put thanos as first element in array
+            //check if thanos wins 
             if (allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] ) {
-                $('#TI-hidding').css('visibility', 'visible');
-                $('h2').text("Thanos Wins");
+                $('#TI-hidding').css('visibility', 'visible');//gif shows up
+                $('h2').text("Thanos Wins");// change h2 to "Thanos Wins"
                 console.log('You WIn')
             } else {
             };

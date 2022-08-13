@@ -119,7 +119,7 @@ select,button {
   
   }
 
-  #C-hidding, #I-hidding, #S-hidding, #TC-hidding, #TI-hidding, #TS-hidding{
+  #Captain-hidding, #Ironman-hidding, #Spiderman-hidding, #TCaptain-hidding, #TIronman-hidding, #TSpiderman-hidding{
     position: absolute;
     display: flex;
     top: 47px;
