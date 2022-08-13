@@ -1,5 +1,11 @@
 # Assemble to the Mic-Mac-Moe!!!❤️❤️❤️
 
+## Author: 
+Wen Gong
+
+## Link:
+https://wen1201.github.io/tic-tac-toe/
+
 ## Description of the project:  
 
 The original task was to make a Tic-Tac-Toe. To bring the game to life, I combined it with my favorate Marvel Universe. This is how Mic-Mac-Moe borned!
@@ -9,7 +15,7 @@ I tried my best to make this web page as cool as possible and am still trying to
 ## Screenshot:
 ![alt text](images/screenshot2.png)
 
-## main features and any instructions:
+## Main features and any instructions:
 The rules to play this game is just the same as Tic- Tax -Toe. It's just you can choose your preferred character at the drop down box. At the end of the game, you will see a short video and you can always choose to play it again.
 
 ## List of any known bugs:
