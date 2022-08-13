@@ -119,7 +119,7 @@ select,button {
   
   }
 
-  #Captain-hidding, #Ironman-hidding, #Spiderman-hidding, #TCaptain-hidding, #TIronman-hidding, #TSpiderman-hidding{
+  #Captain-hidding, #IronMan-hidding, #SpiderMan-hidding, #TCaptain-hidding, #TIronMan-hidding, #TSpiderMan-hidding{
     position: absolute;
     display: flex;
     top: 47px;

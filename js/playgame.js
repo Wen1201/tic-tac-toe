@@ -1,4 +1,4 @@
-var avenger= ['Ironman', 'Spiderman', 'Captain'];
+var avenger= ['IronMan', 'SpiderMan', 'Captain'];
 for (let i = 0; i < avenger.length; i++) {
     $(`#${avenger[i]}`).on("click", playgame);
     function playgame(){
