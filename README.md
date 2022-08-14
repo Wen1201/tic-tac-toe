@@ -35,4 +35,4 @@ The rules to play this game is just the same as Tic- Tax -Toe. It's just you can
 * Sound effect and background music need to be added.
 * Add a couple bad guys in the Thanos's drop down box.
 * Add computer player(AI)
-* The subject looks a bit boring. I am not sure what to add at the moment.
+* I hope this page can bring people to the Marvel Universe.
