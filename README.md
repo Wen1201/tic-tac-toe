@@ -17,6 +17,7 @@ I tried my best to make this web page as cool as possible and am still trying to
 The rules to play this game is just the same as Tic- Tax -Toe. It's just you can choose your preferred character at the drop down box. At the end of the game, you will see a short video and you can always choose to play it again.
 
 ## List of any known bugs:
+* Can't play it on some browsers, they need to play on Firefox.
 
 * The Avenger field wouldn't automatically refreshed to 'Please Select' after click the 'Play Again' tab/ refresh the web page.
 * After clicked on one of the nine boxes, the image wouldn't be locked. If you click on it again, it will change to another image.
