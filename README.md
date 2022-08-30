@@ -21,14 +21,13 @@ The rules to play this game is just the same as Tic- Tax -Toe. It's just you can
 ## List of any known bugs:
 * Can't play it on some browsers, they need to play on Firefox.
 
-* The Avenger field wouldn't automatically refreshed to 'Please Select' after click the 'Play Again' tab/ refresh the web page.
-* After clicked on one of the nine boxes, the image wouldn't be locked. If you click on it again, it will change to another image.
 
 ## Tech used: 
 * Javascript 
 * HTML 
 * jQuery
 * CSS
+
 
   
         
