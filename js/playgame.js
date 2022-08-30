@@ -1,10 +1,6 @@
 var avenger= ['IronMan', 'SpiderMan', 'Captain'];
 for (let i = 0; i < avenger.length; i++) {
-    $(`#${avenger[i]}`).on("click", function(){
-        var obj = document.createElement('audio');
-        obj.src = `audio/${avenger[i]}.mp3`;
-        obj.play()
-    });  
+      
     $(`#${avenger[i]}`).on("click", playgame);
     function playgame(){
         $('h2').text(`${avenger[i]}'s Turn`);
