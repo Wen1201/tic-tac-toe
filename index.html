@@ -28,11 +28,11 @@
   <div id="game">
     <label id="buttton-hero" for="">
         Avenger:
-        <select class="avenger" name="hero" >
+        <select class="avenger" name="hero" id="select" onchange="trig(value)">
             <option value="" selected disabled>Please select</option>
-            <option id="IronMan" value="1">Iron Man</option>
-            <option id="SpiderMan" value="2">Spider Man</option>
-            <option id="Captain" value="3">Cap America</option>
+            <option id="IronMan" value="IronMan">Iron Man</option>
+            <option id="SpiderMan" value="SpiderMan">Spider Man</option>
+            <option id="Captain" value="Captain">Cap America</option>
         </select>
         <span class="custom-arrow"></span>
     </label>

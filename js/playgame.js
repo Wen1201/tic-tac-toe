@@ -1,13 +1,13 @@
-var avenger= ['IronMan', 'SpiderMan', 'Captain'];
-for (let i = 0; i < avenger.length; i++) {
-    $(`#${avenger[i]}`).on("click", function(){
+function trig(val) {
+    var hero = val;
+    $(this).on("change", function(){
         var obj = document.createElement('audio');
-        obj.src = `audio/${avenger[i]}.mp3`;
+        obj.src = `audio/${hero}.mp3`;
         obj.play()
     });
-    $(`#${avenger[i]}`).on("click", playgame);
+    $(this).on("change", playgame);
     function playgame(){
-        $('h2').text(`${avenger[i]}'s Turn`);
+        $('h2').text(`${hero}'s Turn`);
         $(".box").on("click", printMousePos);
         function win() {
             if(allboxes[0] == allboxes[1] && allboxes[0]== allboxes[2]  || allboxes[0] == allboxes[3] && allboxes[0]== allboxes[6] || allboxes[0] == allboxes[4] && allboxes[0]== allboxes[8] || allboxes[1] == allboxes[4] && allboxes[1]== allboxes[7]|| allboxes[2] == allboxes[5] && allboxes[2] == allboxes[8] || allboxes[2] == allboxes[4] &&allboxes[2] == allboxes[6]|| allboxes[3] == allboxes[4] && allboxes[3] == allboxes[5] || allboxes[6] == allboxes[7] && allboxes[6] == allboxes[8]){
@@ -28,19 +28,19 @@ for (let i = 0; i < avenger.length; i++) {
     function printMousePos(){        
         const position = $(this).attr('id');
         if (count % 2 != 0){
-            $(`#img${position}`).attr('src', `images/${avenger[i]}.png`);
+            $(`#img${position}`).attr('src', `images/${hero}.png`);
             $('h2').text("Thanos's Turn");
             allboxes[position - 1] = $(`#img${position}`).attr('src');    
             if (win()) {
-                $(`#${avenger[i]}-hidding`).css('visibility', 'visible');
-                $('h2').text(`${avenger[i]} Wins`);
+                $(`#${hero}-hidding`).css('visibility', 'visible');
+                $('h2').text(`${hero} Wins`);
             } 
         }else{
             $(`#img${position}`).attr('src', 'images/thanos.jpeg'); 
-            $('h2').text(`${avenger[i]}'s Turn`);
+            $('h2').text(`${hero}'s Turn`);
             allboxes[position - 1] = $(`#img${position}`).attr('src');    
             if (win()) {
-                $(`#T${avenger[i]}-hidding`).css('visibility', 'visible');
+                $(`#T${hero}-hidding`).css('visibility', 'visible');
                 $('h2').text("Thanos Wins");
             } 
         }         
