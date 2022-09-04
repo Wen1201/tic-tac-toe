@@ -19,7 +19,7 @@ I tried my best to make this web page as cool as possible and am still trying to
 The rules to play this game is just the same as Tic- Tax -Toe. It's just you can choose your preferred character at the drop down box. At the end of the game, you will see a short video and you can always choose to play it again.
 
 ## List of any known bugs:
-* Can't play it on some browsers, they need to play on Firefox.
+~~Can't play it on some browsers, they need to play on Firefox.~~
 
 
 ## Tech used: 
