@@ -1,11 +1,9 @@
-function trig(val) {
-    var hero = val;
-    $(this).on("change", function(){
+$('.avenger').on('change', function(){
+    let hero = $(this).val();   
         var obj = document.createElement('audio');
         obj.src = `audio/${hero}.mp3`;
-        obj.play()
-    });
-    $(this).on("change", playgame);
+        obj.play();   
+    playgame();
     function playgame(){
         $('h2').text(`${hero}'s Turn`);
         $(".box").on("click", printMousePos);
@@ -46,4 +44,4 @@ function trig(val) {
         }         
     }
     }
-}
+}) 
