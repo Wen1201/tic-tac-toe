@@ -1,5 +1,6 @@
 # Assemble to the Mic-Mac-Moe!!!❤️❤️❤️
 ![alt text](images/screenshot2.png)
+![alt text](images/screenshot3.png)
 My first project as part of studying at General Assembly. I had two weeks of learning Javascript, CSS and HTML, and this is the first time applying what I have learnt.
 
 ## Author: 
